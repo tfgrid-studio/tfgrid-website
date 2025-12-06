@@ -1,0 +1,453 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="TFGrid Nextcloud - Self-Hosted Cloud Platform on ThreeFold Grid">
+	<!-- Hero Section -->
+	<div class="relative overflow-hidden">
+		<div class="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-purple-900/20 to-pink-900/20"></div>
+		<div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px); background-size: 50px 50px; mask-image: linear-gradient(180deg, white, rgba(255,255,255,0));"></div>
+
+		<nav class="relative">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex justify-between items-center py-6">
+					<div class="flex items-center space-x-2">
+						<svg class="w-8 h-8 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+						</svg>
+						<span class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">TFGrid Studio</span>
+					</div>
+					<div class="hidden md:flex items-center space-x-8">
+						<a href="/" class="text-gray-300 hover:text-white transition">Home</a>
+						<a href="https://docs.tfgrid.studio" class="text-gray-300 hover:text-white transition">Documentation</a>
+						<a href="/apps" class="text-gray-300 hover:text-white transition">Apps</a>
+						<a href="/#roadmap" class="text-gray-300 hover:text-white transition">Roadmap</a>
+						<a href="/#pricing" class="text-gray-300 hover:text-white transition">Pricing</a>
+						<a href="https://github.com/tfgrid-studio" class="text-gray-300 hover:text-white transition">GitHub</a>
+						<a href="https://docs.tfgrid.studio/getting-started/quickstart" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-lg transition font-medium">Get Started</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<main class="app-page">
+		<!-- Hero Section -->
+		<section class="hero" style="background: linear-gradient(135deg, #0082c9 0%, #00639a 100%);">
+			<div class="container">
+				<div class="hero-content">
+					<span class="badge">Cloud Platform</span>
+					<h1>TFGrid Nextcloud</h1>
+					<p class="tagline">All-in-One cloud platform with automatic management</p>
+					<p class="description">
+						Deploy a complete Nextcloud instance with file sync, calendar, contacts, video calls, 
+						and collaborative editing. Built-in backups and auto-updates included.
+					</p>
+					<div class="cta-buttons">
+						<a href="https://docs.tfgrid.studio/guides/tfgrid-nextcloud" class="button primary">
+							<span>Deploy Now</span>
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+						<a href="https://github.com/tfgrid-studio/tfgrid-nextcloud" class="button secondary">View Source</a>
+					</div>
+					<div class="stats">
+						<div class="stat">
+							<strong>10 min</strong>
+							<span>Deploy time</span>
+						</div>
+						<div class="stat">
+							<strong>$30-50/mo</strong>
+							<span>Estimated cost</span>
+						</div>
+						<div class="stat">
+							<strong>BorgBackup</strong>
+							<span>Auto backups</span>
+						</div>
+					</div>
+				</div>
+				<div class="hero-visual">
+					<div class="terminal-window">
+						<div class="terminal-header">
+							<span class="dot red"></span>
+							<span class="dot yellow"></span>
+							<span class="dot green"></span>
+							<span class="title">tfgrid-compose</span>
+						</div>
+						<div class="terminal-content">
+							<p><span class="prompt">$</span> tfgrid-compose up tfgrid-nextcloud</p>
+							<p class="output">✅ VM deployed on ThreeFold Grid</p>
+							<p class="output">✅ Docker installed</p>
+							<p class="output">✅ Nextcloud AIO started</p>
+							<p class="output">✅ Complete setup at AIO interface</p>
+							<p><span class="prompt">$</span> # Open https://&lt;ip&gt;:8443</p>
+							<p class="output">🌐 https://cloud.example.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section class="features">
+			<div class="container">
+				<h2>Complete Cloud Platform</h2>
+				<div class="features-grid">
+					<div class="feature">
+						<div class="feature-icon">📁</div>
+						<h3>File Sync & Share</h3>
+						<p>Access your files from anywhere. Desktop, mobile, and web clients included.</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">📅</div>
+						<h3>Calendar & Contacts</h3>
+						<p>Integrated productivity apps. Sync with your devices via CalDAV/CardDAV.</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">🎥</div>
+						<h3>Nextcloud Talk</h3>
+						<p>Video calls and chat. Screen sharing and group calls included.</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">📝</div>
+						<h3>Office Suite</h3>
+						<p>Collaborative document editing with Collabora or OnlyOffice integration.</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">💾</div>
+						<h3>BorgBackup</h3>
+						<p>Automatic encrypted backups with deduplication. Never lose your data.</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">🔒</div>
+						<h3>End-to-End Encryption</h3>
+						<p>Optional E2EE for sensitive files. Your data, your keys.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- How It Works -->
+		<section class="how-it-works">
+			<div class="container">
+				<h2>From Zero to Cloud</h2>
+				<div class="steps">
+					<div class="step">
+						<div class="step-number">1</div>
+						<h3>Deploy</h3>
+						<p>One command deploys Nextcloud AIO on ThreeFold Grid.</p>
+						<code>tfgrid-compose up tfgrid-nextcloud</code>
+					</div>
+					<div class="step">
+						<div class="step-number">2</div>
+						<h3>Configure</h3>
+						<p>Access AIO interface and enter your domain.</p>
+						<code>https://&lt;server-ip&gt;:8443</code>
+					</div>
+					<div class="step">
+						<div class="step-number">3</div>
+						<h3>Start</h3>
+						<p>Click "Start containers" in AIO interface.</p>
+						<code>Select optional features</code>
+					</div>
+					<div class="step">
+						<div class="step-number">4</div>
+						<h3>Use</h3>
+						<p>Access your cloud and install mobile/desktop apps.</p>
+						<code>https://your-domain.com</code>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Use Cases -->
+		<section class="use-cases">
+			<div class="container">
+				<h2>Perfect For</h2>
+				<div class="use-cases-grid">
+					<div class="use-case">
+						<h3>👤 Personal Cloud</h3>
+						<p>"Replace Google Drive/Dropbox with your own cloud"</p>
+						<span class="time">→ Full privacy</span>
+					</div>
+					<div class="use-case">
+						<h3>👥 Team Collaboration</h3>
+						<p>"Share files, calendars, and projects with your team"</p>
+						<span class="time">→ No per-user fees</span>
+					</div>
+					<div class="use-case">
+						<h3>🏢 Business Storage</h3>
+						<p>"Secure document management for your organization"</p>
+						<span class="time">→ GDPR compliant</span>
+					</div>
+					<div class="use-case">
+						<h3>📸 Photo Backup</h3>
+						<p>"Automatic photo sync from all your devices"</p>
+						<span class="time">→ Unlimited storage</span>
+					</div>
+					<div class="use-case">
+						<h3>🎥 Video Meetings</h3>
+						<p>"Self-hosted video calls with Nextcloud Talk"</p>
+						<span class="time">→ No Zoom needed</span>
+					</div>
+					<div class="use-case">
+						<h3>📧 Email Integration</h3>
+						<p>"Connect your email accounts in one place"</p>
+						<span class="time">→ Unified inbox</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing -->
+		<section class="pricing">
+			<div class="container">
+				<h2>Simple Pricing</h2>
+				<p class="pricing-subtitle">Pay only for ThreeFold Grid resources</p>
+				<div class="pricing-card">
+					<div class="pricing-details">
+						<div class="pricing-item">
+							<span>Single VM (2-4 CPU, 4-8GB RAM)</span>
+							<strong>$30-50/month</strong>
+						</div>
+						<div class="pricing-item">
+							<span>Nextcloud All-in-One</span>
+							<strong>Included</strong>
+						</div>
+						<div class="pricing-item">
+							<span>SSL Certificates</span>
+							<strong>Free (Let's Encrypt)</strong>
+						</div>
+						<div class="pricing-item">
+							<span>BorgBackup</span>
+							<strong>Included</strong>
+						</div>
+					</div>
+					<div class="pricing-benefits">
+						<h4>Everything Included</h4>
+						<ul>
+							<li>✅ File sync & share</li>
+							<li>✅ Calendar & contacts</li>
+							<li>✅ Video calls (Talk)</li>
+							<li>✅ Office suite (optional)</li>
+							<li>✅ Automatic backups</li>
+							<li>✅ Auto-updates</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="final-cta" style="background: linear-gradient(135deg, #0082c9 0%, #00639a 100%);">
+			<div class="container">
+				<h2>Start Your Cloud</h2>
+				<p>Deploy your own Nextcloud on decentralized infrastructure</p>
+				<div class="cta-buttons">
+					<a href="https://docs.tfgrid.studio/guides/tfgrid-nextcloud" class="button primary large">Deploy Now</a>
+					<a href="https://github.com/tfgrid-studio/tfgrid-nextcloud" class="button secondary large">View Source</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- TFGrid Ecosystem -->
+	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+		<div class="text-center mb-16">
+			<h2 class="text-4xl font-bold mb-4">TFGrid Studio Ecosystem</h2>
+			<p class="text-xl text-gray-400">Integrated tools for your development journey</p>
+		</div>
+
+		<div class="grid md:grid-cols-4 gap-6">
+			<a href="/" class="group p-6 bg-gray-900/50 border border-gray-800 hover:border-indigo-500/50 rounded-xl transition">
+				<div class="flex items-center gap-3 mb-2">
+					<svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+					</svg>
+					<h4 class="font-bold group-hover:text-indigo-400 transition">TFGrid Studio</h4>
+				</div>
+				<p class="text-sm text-gray-500">tfgrid.studio</p>
+			</a>
+
+			<a href="https://install.tfgrid.studio" class="group p-6 bg-gray-900/50 border border-gray-800 hover:border-indigo-500/50 rounded-xl transition">
+				<div class="flex items-center gap-3 mb-2">
+					<svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+					</svg>
+					<h4 class="font-bold group-hover:text-indigo-400 transition">Install</h4>
+				</div>
+				<p class="text-sm text-gray-500">install.tfgrid.studio</p>
+			</a>
+
+			<a href="https://registry.tfgrid.studio" class="group p-6 bg-gray-900/50 border border-gray-800 hover:border-indigo-500/50 rounded-xl transition">
+				<div class="flex items-center gap-3 mb-2">
+					<svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+					</svg>
+					<h4 class="font-bold group-hover:text-indigo-400 transition">Registry</h4>
+				</div>
+				<p class="text-sm text-gray-500">registry.tfgrid.studio</p>
+			</a>
+
+			<a href="https://docs.tfgrid.studio" class="group p-6 bg-gray-900/50 border border-gray-800 hover:border-indigo-500/50 rounded-xl transition">
+				<div class="flex items-center gap-3 mb-2">
+					<svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+					</svg>
+					<h4 class="font-bold group-hover:text-indigo-400 transition">Documentation</h4>
+				</div>
+				<p class="text-sm text-gray-500">docs.tfgrid.studio</p>
+			</a>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="border-t border-gray-800">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+			<div class="grid md:grid-cols-5 gap-8">
+				<div>
+					<div class="flex items-center space-x-2 mb-4">
+						<svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+						</svg>
+						<span class="font-bold">TFGrid Studio</span>
+					</div>
+					<p class="text-gray-400 text-sm">Complete development platform for ThreeFold Grid</p>
+				</div>
+
+				<div>
+					<h4 class="font-semibold mb-4">Platform</h4>
+					<ul class="space-y-2 text-gray-400 text-sm">
+						<li><a href="/apps" class="hover:text-white transition">Apps</a></li>
+						<li><a href="https://registry.tfgrid.studio" class="hover:text-white transition">Registry</a></li>
+						<li><a href="https://github.com/tfgrid-studio/tfgrid-compose" class="hover:text-white transition">TFGrid Compose</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h4 class="font-semibold mb-4">Resources</h4>
+					<ul class="space-y-2 text-gray-400 text-sm">
+						<li><a href="https://docs.tfgrid.studio" class="hover:text-white transition">Documentation</a></li>
+						<li><a href="https://docs.tfgrid.studio/getting-started/quickstart" class="hover:text-white transition">Quick Start</a></li>
+						<li><a href="https://docs.tfgrid.studio/guides/" class="hover:text-white transition">Guides</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h4 class="font-semibold mb-4">Community</h4>
+					<ul class="space-y-2 text-gray-400 text-sm">
+						<li><a href="https://github.com/tfgrid-studio" class="hover:text-white transition">GitHub</a></li>
+						<li><a href="https://github.com/orgs/tfgrid-studio/discussions" class="hover:text-white transition">Community</a></li>
+						<li><a href="https://docs.tfgrid.studio/troubleshooting/guide/" class="hover:text-white transition">Support</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<h4 class="font-semibold mb-4">Company</h4>
+					<ul class="space-y-2 text-gray-400 text-sm">
+						<li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+						<li><a href="#roadmap" class="hover:text-white transition">Roadmap</a></li>
+						<li><a href="https://github.com/tfgrid-studio/tfgrid-compose/blob/main/LICENSE" class="hover:text-white transition">License</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+				<p>&copy; 2025 TFGrid Studio</p>
+			</div>
+		</div>
+	</footer>
+</Layout>
+
+<style>
+	.app-page {
+		--primary: #0082c9;
+		--primary-dark: #00639a;
+		--text: #F9FAFB;
+		--text-light: #D1D5DB;
+		--bg: #111827;
+		--bg-alt: #1F2937;
+		--border: #374151;
+	}
+
+	.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+	.hero { padding: 8rem 0 6rem; color: white; }
+	.hero .container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+	.hero-content { max-width: 600px; }
+
+	.badge { display: inline-block; padding: 0.5rem 1rem; background: rgba(255, 255, 255, 0.2); border-radius: 2rem; font-size: 0.875rem; font-weight: 500; margin-bottom: 1rem; }
+	.hero h1 { font-size: 3.5rem; font-weight: 800; margin: 0 0 1rem; line-height: 1.1; }
+	.tagline { font-size: 1.25rem; margin-bottom: 1rem; opacity: 0.9; }
+	.description { font-size: 1.125rem; opacity: 0.85; margin-bottom: 2rem; }
+
+	.cta-buttons { display: flex; gap: 1rem; margin-bottom: 3rem; }
+	.button { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; border-radius: 0.5rem; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+	.button.primary { background: white; color: var(--primary); }
+	.button.secondary { background: rgba(255, 255, 255, 0.2); color: white; border: 2px solid white; }
+	.button.large { padding: 1.25rem 2.5rem; font-size: 1.125rem; }
+
+	.stats { display: flex; gap: 3rem; }
+	.stat { display: flex; flex-direction: column; }
+	.stat strong { font-size: 1.5rem; margin-bottom: 0.25rem; }
+	.stat span { opacity: 0.75; font-size: 0.875rem; }
+
+	.terminal-window { background: #1e1e1e; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3); }
+	.terminal-header { background: #323232; padding: 0.75rem 1rem; display: flex; align-items: center; gap: 0.5rem; }
+	.dot { width: 12px; height: 12px; border-radius: 50%; }
+	.dot.red { background: #ff5f56; }
+	.dot.yellow { background: #ffbd2e; }
+	.dot.green { background: #27c93f; }
+	.terminal-header .title { margin-left: auto; color: #999; font-size: 0.875rem; }
+	.terminal-content { padding: 1.5rem; font-family: 'Roboto Mono', monospace; font-size: 0.9rem; line-height: 1.6; color: white; }
+	.prompt { color: #4EC9B0; }
+	.output { color: #CE9178; }
+
+	.features { padding: 6rem 0; }
+	.features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: var(--text); }
+	.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+	.feature { text-align: center; padding: 2rem; }
+	.feature-icon { font-size: 3rem; margin-bottom: 1rem; }
+	.feature h3 { margin-bottom: 1rem; color: var(--text); }
+	.feature p { color: var(--text-light); }
+
+	.how-it-works { padding: 6rem 0; background: var(--bg-alt); }
+	.how-it-works h2 { text-align: center; font-size: 2.5rem; margin-bottom: 4rem; color: var(--text); }
+	.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+	.step { text-align: center; padding: 2rem; background: var(--bg); border-radius: 0.5rem; border: 1px solid var(--border); }
+	.step h3 { color: var(--text); margin-bottom: 1rem; }
+	.step p { color: var(--text-light); margin-bottom: 1rem; }
+	.step-number { width: 50px; height: 50px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem; }
+	.step code { display: block; margin-top: 1rem; padding: 0.75rem 1rem; background: var(--bg-alt); border-radius: 0.25rem; font-size: 0.875rem; font-family: 'Roboto Mono', monospace; color: var(--text); }
+
+	.use-cases { padding: 6rem 0; }
+	.use-cases h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: var(--text); }
+	.use-cases-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+	.use-case { padding: 2rem; background: var(--bg-alt); border-radius: 0.5rem; border: 1px solid var(--border); }
+	.use-case h3 { margin-bottom: 0.5rem; color: var(--text); }
+	.use-case p { color: var(--text-light); font-style: italic; margin-bottom: 1rem; }
+	.use-case .time { color: var(--primary); font-weight: 600; }
+
+	.pricing { padding: 6rem 0; background: var(--bg-alt); }
+	.pricing h2 { text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: var(--text); }
+	.pricing-subtitle { text-align: center; color: var(--text-light); margin-bottom: 3rem; }
+	.pricing-card { max-width: 800px; margin: 0 auto; background: var(--bg); border-radius: 1rem; padding: 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; border: 1px solid var(--border); }
+	.pricing-item { display: flex; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid var(--border); }
+	.pricing-item span:first-child { color: var(--text-light); }
+	.pricing-item strong { color: var(--text); }
+	.pricing-benefits h4 { color: var(--text); margin-bottom: 1rem; }
+	.pricing-benefits ul { list-style: none; padding: 0; }
+	.pricing-benefits li { padding: 0.5rem 0; color: var(--text-light); }
+
+	.final-cta { padding: 6rem 0; color: white; text-align: center; }
+	.final-cta h2 { font-size: 3rem; margin-bottom: 1rem; }
+	.final-cta p { font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9; }
+	.final-cta .cta-buttons { justify-content: center; }
+
+	@media (max-width: 768px) {
+		.hero .container { grid-template-columns: 1fr; }
+		.hero-visual { display: none; }
+		.pricing-card { grid-template-columns: 1fr; }
+	}
+</style>
