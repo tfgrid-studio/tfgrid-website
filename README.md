@@ -66,39 +66,46 @@ tfgrid.studio  →  185.199.111.153
 ✅ **CTA** - Get started section  
 ✅ **Footer** - Links to docs, GitHub, resources  
 
-## 🎯 Platform Status (v0.10.1)
+## 🎯 Platform Status (Dec 2025)
 
-**Production Ready with Growing App Ecosystem!**
+**6 Production Apps Available!**
 
 **Core Patterns (Production Ready):**
 - ✅ **single-vm** - Development & internal services
 - ✅ **gateway** - Production web apps with SSL  
 - ✅ **k3s** - Enterprise Kubernetes clusters
 
-**Official Apps (Production Ready):**
+**Official Apps (6 Production Ready):**
+- ✅ **tfgrid-wordpress** - WordPress + Caddy + MariaDB (NEW!)
+- ✅ **tfgrid-nextcloud** - Nextcloud All-in-One cloud platform (NEW!)
+- ✅ **tfgrid-erpnext** - ERPNext business ERP system (NEW!)
 - ✅ **tfgrid-ai-agent** - AI coding agent with Qwen integration
-- ✅ **tfgrid-gitea** - Self-hosted Git service (NEW!)
+- ✅ **tfgrid-ai-stack** - AI + Git + Gateway stack
+- ✅ **tfgrid-gitea** - Self-hosted Git service
 
-**Coming Soon (v0.11.0 - November 2025):**
-- 🔄 **AI Gateway Integration** - Complete workflow: AI creates code → Gitea → Live site
-- 🔄 **Dashboard Web UI** (v0.12.0) - Visual project management
-- 🔄 **Voice Coding** (v0.13.0) - "Vibe code by talking" interface
+**New Features:**
+- ✅ **Interactive mode** (`-i` flag) - Guided deployment with prompts
+- ✅ **DNS automation** - Cloudflare, Name.com, Namecheap support
+- ✅ **Local dashboard** - Visual deployment management
 
 **What this means:**
-- Deploy any application type
+- Deploy any application type with one command
+- Interactive setup with DNS automation
 - Development → Production → Enterprise scale
-- Integrated AI development workflow
 - Decentralized, open source, AI-powered  
 
 ---
 
 ## 🔗 Related Repositories
 
-- **[tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs)** - Documentation site
 - **[tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose)** - CLI tool
+- **[tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs)** - Documentation site
+- **[app-registry](https://github.com/tfgrid-studio/app-registry)** - Official app registry
+- **[tfgrid-wordpress](https://github.com/tfgrid-studio/tfgrid-wordpress)** - WordPress app
+- **[tfgrid-nextcloud](https://github.com/tfgrid-studio/tfgrid-nextcloud)** - Nextcloud app
+- **[tfgrid-erpnext](https://github.com/tfgrid-studio/tfgrid-erpnext)** - ERPNext app
 - **[tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent)** - AI coding agent
 - **[tfgrid-gitea](https://github.com/tfgrid-studio/tfgrid-gitea)** - Self-hosted Git service
-- **[app-registry](https://github.com/tfgrid-studio/app-registry)** - Official app registry (v0.10.0+)
 
 ---
 
