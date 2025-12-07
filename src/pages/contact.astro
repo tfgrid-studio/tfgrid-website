@@ -1,16 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import EcosystemLinks from '../components/EcosystemLinks.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Contact - TFGrid Studio">
-  <main class="min-h-screen bg-gray-950 text-white">
-    <!-- Header -->
-    <div class="bg-gradient-to-b from-gray-900 to-gray-950 border-b border-gray-800">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
-        <p class="text-xl text-gray-400">Get in touch with the TFGrid Studio team</p>
-      </div>
+  <!-- Hero Section with Navbar -->
+  <div class="relative overflow-hidden">
+    <!-- Background gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-purple-900/20 to-pink-900/20"></div>
+    <!-- CSS Grid Pattern -->
+    <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px); background-size: 50px 50px; mask-image: linear-gradient(180deg, white, rgba(255,255,255,0));"></div>
+    
+    <Navbar />
+
+    <!-- Page Header -->
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+      <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+      <p class="text-xl text-gray-400">Get in touch with the TFGrid Studio team</p>
     </div>
+  </div>
+
+  <main class="bg-gray-950 text-white">
 
     <!-- Contact Cards -->
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -144,4 +156,10 @@ import Layout from '../layouts/Layout.astro';
 
     </div>
   </main>
+
+  <!-- Ecosystem Links -->
+  <EcosystemLinks currentSite="main" />
+
+  <!-- Footer -->
+  <Footer />
 </Layout>
