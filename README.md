@@ -39,7 +39,7 @@ Automatically deploys to GitHub Pages on every push to `main`.
 
 **URLs:**
 - **Production:** `https://tfgrid.studio` (custom domain)
-- **GitHub Pages:** `https://tfgrid-studio.github.io/tfgrid-www/`
+- **GitHub Pages:** `https://tfgrid-studio.github.io/tfgrid-website/`
 
 ---
 
