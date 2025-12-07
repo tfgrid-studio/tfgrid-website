@@ -100,7 +100,7 @@ tfgrid.studio  →  185.199.111.153
 
 - **[tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose)** - CLI tool
 - **[tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs)** - Documentation site
-- **[app-registry](https://github.com/tfgrid-studio/app-registry)** - Official app registry
+- **[tfgrid-registry](https://github.com/tfgrid-studio/tfgrid-registry)** - Official app registry
 - **[tfgrid-wordpress](https://github.com/tfgrid-studio/tfgrid-wordpress)** - WordPress app
 - **[tfgrid-nextcloud](https://github.com/tfgrid-studio/tfgrid-nextcloud)** - Nextcloud app
 - **[tfgrid-erpnext](https://github.com/tfgrid-studio/tfgrid-erpnext)** - ERPNext app
