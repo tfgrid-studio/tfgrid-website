@@ -17,11 +17,11 @@ import Footer from '../components/Footer.astro';
 
     <!-- Hero Content -->
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32 text-center">
-      <div class="inline-block mb-4 md:mb-6 px-4 py-2 bg-indigo-600/20 border border-indigo-500/50 rounded-full">
+      <div class="inline-block mb-4 md:mb-4 md:mb-6 px-4 py-2 bg-indigo-600/20 border border-indigo-500/50 rounded-full">
         <span class="text-indigo-400 font-semibold">Official Apps</span>
       </div>
 
-      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black tracking-tight mb-4 md:mb-6">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black tracking-tight mb-4 md:mb-4 md:mb-6">
         <span class="text-white">
           Deploy Official
         </span>
@@ -39,10 +39,10 @@ import Footer from '../components/Footer.astro';
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-        <a href="https://docs.tfgrid.studio/getting-started/installation" class="px-6 sm:px-8 py-4 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold text-lg transition transform hover:scale-105 shadow-lg shadow-indigo-500/50">
+        <a href="https://docs.tfgrid.studio/getting-started/installation" class="px-6 sm:px-6 sm:px-6 sm:px-8 py-4 min-h-[48px] flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold text-lg transition transform hover:scale-105 shadow-lg shadow-indigo-500/50">
           Install TFGrid Compose
         </a>
-        <a href="https://registry.tfgrid.studio" class="px-6 sm:px-8 py-4 bg-gray-800 hover:bg-gray-700 rounded-lg font-semibold text-lg transition border border-gray-700">
+        <a href="https://registry.tfgrid.studio" class="px-6 sm:px-6 sm:px-6 sm:px-8 py-4 min-h-[48px] flex items-center justify-center bg-gray-800 hover:bg-gray-700 rounded-lg font-semibold text-lg transition border border-gray-700">
           Browse Full Registry
         </a>
       </div>
@@ -56,20 +56,20 @@ import Footer from '../components/Footer.astro';
       <p class="text-xl text-gray-400">Three flagship apps powering the ThreeFold ecosystem</p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-8">
+    <div class="grid grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
       <!-- TFGrid AI Agent -->
       <div class="bg-gray-900/50 backdrop-blur-sm border border-indigo-500/50 rounded-xl p-8 relative group hover:border-indigo-400/70 transition">
         <div class="absolute -top-3 left-6">
           <span class="px-3 py-1 bg-indigo-600 text-sm font-semibold rounded-full">✅ Live</span>
         </div>
-        <div class="w-16 h-16 bg-indigo-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-6 mt-2">
+        <div class="w-16 h-16 bg-indigo-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-4 md:mb-6 mt-2">
           <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
         </div>
         <h3 class="text-2xl font-bold mb-3">TFGrid AI Agent</h3>
-        <p class="text-gray-400 text-sm mb-4 md:mb-6">Autonomous AI coding assistant that writes, tests, and refactors code while you sleep. Powered by Qwen AI.</p>
-        <div class="space-y-3 mb-4 md:mb-6">
+        <p class="text-gray-400 text-sm mb-4 md:mb-4 md:mb-6">Autonomous AI coding assistant that writes, tests, and refactors code while you sleep. Powered by Qwen AI.</p>
+        <div class="space-y-3 mb-4 md:mb-4 md:mb-6">
           <div class="flex items-center gap-2 text-sm">
             <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             <span>2-3 min deploy time</span>
@@ -98,15 +98,15 @@ import Footer from '../components/Footer.astro';
         <div class="absolute -top-3 left-6">
           <span class="px-3 py-1 bg-green-600 text-sm font-semibold rounded-full">✅ Live</span>
         </div>
-        <div class="w-16 h-16 bg-green-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-6 mt-2">
+        <div class="w-16 h-16 bg-green-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-4 md:mb-6 mt-2">
           <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5a2 2 0 012-2h4a2 2 0 012 2v2H8V5z" />
           </svg>
         </div>
         <h3 class="text-2xl font-bold mb-3">TFGrid Gitea</h3>
-        <p class="text-gray-400 text-sm mb-4 md:mb-6">Self-hosted Git service with web interface. Perfect for private repositories and code collaboration.</p>
-        <div class="space-y-3 mb-4 md:mb-6">
+        <p class="text-gray-400 text-sm mb-4 md:mb-4 md:mb-6">Self-hosted Git service with web interface. Perfect for private repositories and code collaboration.</p>
+        <div class="space-y-3 mb-4 md:mb-4 md:mb-6">
           <div class="flex items-center gap-2 text-sm">
             <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             <span>5 min deploy time</span>
@@ -135,14 +135,14 @@ import Footer from '../components/Footer.astro';
         <div class="absolute -top-3 left-6">
           <span class="px-3 py-1 bg-purple-600 text-sm font-semibold rounded-full">✅ Live</span>
         </div>
-        <div class="w-16 h-16 bg-purple-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-6 mt-2">
+        <div class="w-16 h-16 bg-purple-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-4 md:mb-6 mt-2">
           <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
           </svg>
         </div>
         <h3 class="text-2xl font-bold mb-3">TFGrid AI Stack</h3>
-        <p class="text-gray-400 text-sm mb-4 md:mb-6">Complete AI development environment with automatic Git hosting. From prompt to production in one deployment.</p>
-        <div class="space-y-3 mb-4 md:mb-6">
+        <p class="text-gray-400 text-sm mb-4 md:mb-4 md:mb-6">Complete AI development environment with automatic Git hosting. From prompt to production in one deployment.</p>
+        <div class="space-y-3 mb-4 md:mb-4 md:mb-6">
           <div class="flex items-center gap-2 text-sm">
             <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             <span>10 min deploy time</span>
@@ -171,15 +171,15 @@ import Footer from '../components/Footer.astro';
         <div class="absolute -top-3 left-6">
           <span class="px-3 py-1 bg-blue-600 text-sm font-semibold rounded-full">✅ Live</span>
         </div>
-        <div class="w-16 h-16 bg-blue-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-6 mt-2">
+        <div class="w-16 h-16 bg-blue-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-4 md:mb-6 mt-2">
           <svg class="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 19c-4.963 0-9-4.037-9-9s4.037-9 9-9 9 4.037 9 9-4.037 9-9 9z"/>
             <text x="8" y="16" font-size="10" font-weight="bold">W</text>
           </svg>
         </div>
         <h3 class="text-2xl font-bold mb-3">TFGrid WordPress</h3>
-        <p class="text-gray-400 text-sm mb-4 md:mb-6">Self-hosted WordPress with Caddy and MariaDB. Perfect for blogs, portfolios, and business websites.</p>
-        <div class="space-y-3 mb-4 md:mb-6">
+        <p class="text-gray-400 text-sm mb-4 md:mb-4 md:mb-6">Self-hosted WordPress with Caddy and MariaDB. Perfect for blogs, portfolios, and business websites.</p>
+        <div class="space-y-3 mb-4 md:mb-4 md:mb-6">
           <div class="flex items-center gap-2 text-sm">
             <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             <span>5 min deploy time</span>
@@ -208,14 +208,14 @@ import Footer from '../components/Footer.astro';
         <div class="absolute -top-3 left-6">
           <span class="px-3 py-1 bg-cyan-600 text-sm font-semibold rounded-full">✅ Live</span>
         </div>
-        <div class="w-16 h-16 bg-cyan-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-6 mt-2">
+        <div class="w-16 h-16 bg-cyan-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-4 md:mb-6 mt-2">
           <svg class="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
           </svg>
         </div>
         <h3 class="text-2xl font-bold mb-3">TFGrid Nextcloud</h3>
-        <p class="text-gray-400 text-sm mb-4 md:mb-6">All-in-One cloud platform with file sync, calendar, contacts, video calls, and office suite.</p>
-        <div class="space-y-3 mb-4 md:mb-6">
+        <p class="text-gray-400 text-sm mb-4 md:mb-4 md:mb-6">All-in-One cloud platform with file sync, calendar, contacts, video calls, and office suite.</p>
+        <div class="space-y-3 mb-4 md:mb-4 md:mb-6">
           <div class="flex items-center gap-2 text-sm">
             <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             <span>10 min deploy time</span>
@@ -244,14 +244,14 @@ import Footer from '../components/Footer.astro';
         <div class="absolute -top-3 left-6">
           <span class="px-3 py-1 bg-orange-600 text-sm font-semibold rounded-full">✅ Live</span>
         </div>
-        <div class="w-16 h-16 bg-orange-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-6 mt-2">
+        <div class="w-16 h-16 bg-orange-600/20 rounded-lg flex items-center justify-center mb-4 md:mb-4 md:mb-6 mt-2">
           <svg class="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
           </svg>
         </div>
         <h3 class="text-2xl font-bold mb-3">TFGrid ERPNext</h3>
-        <p class="text-gray-400 text-sm mb-4 md:mb-6">Open-source ERP for accounting, inventory, sales, HR, manufacturing, and more.</p>
-        <div class="space-y-3 mb-4 md:mb-6">
+        <p class="text-gray-400 text-sm mb-4 md:mb-4 md:mb-6">Open-source ERP for accounting, inventory, sales, HR, manufacturing, and more.</p>
+        <div class="space-y-3 mb-4 md:mb-4 md:mb-6">
           <div class="flex items-center gap-2 text-sm">
             <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             <span>15 min deploy time</span>
