@@ -60,4 +60,23 @@ a:focus {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  /* Prevent horizontal overflow from wide content */
+  .diagram-container,
+  .pattern-diagram,
+  .ascii-diagram {
+    overflow-x: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Ensure pre blocks in diagrams are contained */
+  .diagram-container pre,
+  .pattern-diagram pre,
+  .ascii-diagram pre {
+    white-space: pre;
+    overflow-x: auto;
+    max-width: 100%;
+    width: 100%;
+  }
 }

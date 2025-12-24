@@ -316,7 +316,7 @@ import Footer from '../components/Footer.astro';
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Step 1 -->
         <div class="relative">
-          <div class="bg-gradient-to-br from-indigo-900/30 to-purple-900/30 border border-indigo-500/50 rounded-xl p-8 h-full">
+          <div class="bg-gradient-to-br from-indigo-900/30 to-purple-900/30 border border-indigo-500/50 rounded-xl p-8 h-full ascii-diagram">
             <div class="text-5xl font-bold text-indigo-500 mb-4">1</div>
             <h3 class="text-2xl font-bold mb-3">Install</h3>
             <pre class="text-sm bg-gray-950 p-4 rounded-lg mb-4 text-gray-300 font-mono overflow-x-auto"><code>curl -sSL install.tfgrid.studio/install.sh | sh</code></pre>
@@ -331,7 +331,7 @@ import Footer from '../components/Footer.astro';
 
         <!-- Step 2 -->
         <div class="relative">
-          <div class="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/50 rounded-xl p-8 h-full">
+          <div class="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/50 rounded-xl p-8 h-full ascii-diagram">
             <div class="text-5xl font-bold text-purple-500 mb-4">2</div>
             <h3 class="text-2xl font-bold mb-3">Deploy</h3>
             <pre class="text-sm bg-gray-950 p-4 rounded-lg mb-4 text-gray-300 font-mono overflow-x-auto"><code>tfgrid-compose up tfgrid-ai-agent</code></pre>
@@ -346,7 +346,7 @@ import Footer from '../components/Footer.astro';
 
         <!-- Step 3 -->
         <div class="relative">
-          <div class="bg-gradient-to-br from-pink-900/30 to-red-900/30 border border-pink-500/50 rounded-xl p-8 h-full">
+          <div class="bg-gradient-to-br from-pink-900/30 to-red-900/30 border border-pink-500/50 rounded-xl p-8 h-full ascii-diagram">
             <div class="text-5xl font-bold text-pink-500 mb-4">3</div>
             <h3 class="text-2xl font-bold mb-3">Use</h3>
             <pre class="text-sm bg-gray-950 p-4 rounded-lg mb-4 text-gray-300 font-mono overflow-x-auto"><code>tfgrid-compose ssh tfgrid-ai-agent</code></pre>
@@ -391,7 +391,7 @@ import Footer from '../components/Footer.astro';
             <h3 class="text-3xl font-bold mb-4">🔹 single-vm Pattern</h3>
             <p class="text-xl text-gray-300 mb-6">Simple VM deployment for development and internal services</p>
             
-            <div class="bg-gray-950 rounded-lg p-6 mb-6 font-mono text-sm">
+            <div class="bg-gray-950 rounded-lg p-6 mb-6 font-mono text-sm ascii-diagram">
               <pre class="text-gray-300"><code>┌──────────────────────────┐
 │    Your Application      │
 │    Private Networking    │
@@ -450,7 +450,7 @@ import Footer from '../components/Footer.astro';
             <h3 class="text-3xl font-bold mb-4">🌐 gateway Pattern</h3>
             <p class="text-xl text-gray-300 mb-6">Multi-VM with public access and SSL for production web apps</p>
             
-            <div class="bg-gray-950 rounded-lg p-6 mb-6 font-mono text-sm">
+            <div class="bg-gray-950 rounded-lg p-6 mb-6 font-mono text-sm ascii-diagram">
               <pre class="text-gray-300"><code>Internet → [Gateway VM] → [Backend VMs]
           (Public IPv4)   (Private Network)
           (SSL/TLS)       (Your App + DB)</code></pre>
@@ -527,19 +527,19 @@ import Footer from '../components/Footer.astro';
             <h3 class="text-3xl font-bold mb-4">🚀 k3s Pattern</h3>
             <p class="text-xl text-gray-300 mb-6">Full Kubernetes cluster for cloud-native applications</p>
             
-            <div class="bg-gray-950 rounded-lg p-6 mb-6 font-mono text-sm">
-              <pre class="text-gray-300"><code>┌──────────────────────────────┐
-│  K3s Kubernetes Cluster      │
-│  ┌────────────────────────┐  │
-│  │  Management Node       │  │
-│  │  (kubectl, helm, k9s)  │  │
-│  └────────────────────────┘  │
-│  ┌────────────────────────┐  │
-│  │  Control + Workers     │  │
-│  │  (MetalLB + Ingress)   │  │
-│  └────────────────────────┘  │
-└──────────────────────────────┘</code></pre>
-            </div>
+      <div class="bg-gray-950 rounded-lg p-6 mb-6 font-mono text-sm ascii-diagram">
+        <h3 class="text-xl font-bold mb-6 text-center">How It Works</h3>
+        <pre class="text-sm text-gray-300 font-mono leading-relaxed"><code>Your Laptop (Safe)
+      ↓ SSH
+┌─────────────────────────────┐
+│ AI Agent VM (Isolated)      │
+│                             │
+│ ✨ Qwen AI Integration      │
+│ 🔄 Loop Technique           │
+│ 📦 Project Management       │
+│ 🔒 No Risk to Local Files   │
+└─────────────────────────────┘</code></pre>
+      </div>
 
             <div class="space-y-4 mb-6">
               <div>
